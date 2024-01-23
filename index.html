@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bill Maker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Hotel Bill Maker</h1>
+    <form id="billForm">
+        <div class="item-section">
+            <label>Select Items:</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>Food Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody id="itemList"></tbody>
+            </table>
+        </div>
+
+        <button type="button" onclick="addItem()">Add Item</button>
+    </form>
+
+    <table id="billTable">
+        <thead>
+            <tr>
+                <th>Action</th>
+                <th>Food Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="billItems"></tbody>
+    </table>
+
+    <div id="totalAmount">Total Amount: $<span id="total">0.00</span></div>
+
+    <!-- New buttons -->
+    <button type="button" onclick="clearBillItems()">Clear Bill Items</button>
+    <button type="button" onclick="generateBill()">Generate Bill</button>
+</body>
+</html>

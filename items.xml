@@ -1,0 +1,17 @@
+<items>
+    <item>
+        <foodName>Pizza</foodName>
+        <price>250.00</price>
+    </item>
+    <item>
+        <foodName>Samosa</foodName>
+        <price>30.00</price>
+    </item>
+    <item>
+        <foodName>Burger</foodName>
+        <price>130.00</price>
+    </item><item>
+        <foodName>Sandwiche</foodName>
+        <price>100.00</price>
+    </item>
+</items>
